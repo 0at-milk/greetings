@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'homepage.js') }}"></script>
+    
+    <style>
+    	.col-md-4{
+    		background-color: pink;
+    	}
+    	.container{
+    		background-color: lightgrey;
+    	}
+
+
+    	.btn-primary{
+    		width: 100%; 
+    		border:none; 
+    		display:inline-block; 
+    		color:white;
+    	}
+    	#options{
+    		padding-bottom: 100px;
+    	}
+
+    	img{
+    		 width: 100%;
+  			height: auto;
+    	}
+
+
+
+
+    </style>
+
+
+<body>
+	<div class="container">
+    	<div class="row">
+    		<div class="col-6"><img src="https://images-na.ssl-images-amazon.com/images/I/91WXDfyZ9KL.jpg"></div>
+ 
+			<div class="col-md-6 justify-content-center">
+
+					<h4>Learn some basic greetings around the world!</h4>
+					<div class="col-md-6">
+						<button class="btn btn-primary btn-lg">Spain</button>
+					</div>
+					<div class="col-md-6">
+						<button href="/learn/2" type="button" class="btn btn-primary btn-lg">Yemen</button>
+					</div>
+					<div class="col-md-6">
+						<button href="/learn/3" type="button" class="btn btn-primary btn-lg">Japan</button>
+					</div>
+					<div class="col-md-6">
+						<button href="/learn/3" type="button" class="btn btn-primary btn-lg">New Zealand</button>
+					</div>
+					<div class="col-md-6">
+						<button href="/learn/4" type="button" class="btn btn-primary btn-lg">Tibet</button>
+					</div>
+					<div class="col-md-6">
+						<button href="/learn/5" type="button" class="btn btn-primary btn-lg">Quiz</button>
+					</div>
+
+			</div>
+    		
+		</div>
+
+	</div>
+   
+</body>
+
+
+{% endblock %}
+
